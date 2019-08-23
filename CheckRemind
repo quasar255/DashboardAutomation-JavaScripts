@@ -1,0 +1,182 @@
+function OneWeekDue() {
+
+  var sheet2 = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Team");
+  
+  var Provider_1_1_email = sheet2.getRange("E2").getValue(); 
+  var Owner_1_1_email = sheet2.getRange("C2").getValue();  
+  var Provider_2_1_email = sheet2.getRange("E3").getValue(); 
+  var Owner_2_1_email = sheet2.getRange("C3").getValue();   
+  var Provider_2_2_email = sheet2.getRange("E4").getValue(); 
+  var Owner_2_2_email = sheet2.getRange("C4").getValue();   
+  var Provider_2_3_email = sheet2.getRange("E5").getValue(); 
+  var Owner_2_3_email = sheet2.getRange("C5").getValue();   
+  var Provider_2_4_email = sheet2.getRange("E6").getValue(); 
+  var Owner_2_4_email = sheet2.getRange("C6").getValue();   
+  var Provider_3_1_email = sheet2.getRange("E7").getValue(); 
+  var Owner_3_1_email = sheet2.getRange("C7").getValue();   
+  var Provider_3_2_email = sheet2.getRange("E8").getValue(); 
+  var Owner_3_2_email = sheet2.getRange("C8").getValue();   
+  var Provider_4_1_email = sheet2.getRange("E9").getValue(); 
+  var Owner_4_1_email = sheet2.getRange("C9").getValue();   
+  var Provider_5_1_email = sheet2.getRange("E10").getValue(); 
+  var Owner_5_1_email = sheet2.getRange("C10").getValue();   
+  var Provider_6_1_email = sheet2.getRange("E11").getValue(); 
+  var Owner_6_1_email = sheet2.getRange("C11").getValue();   
+  var Provider_7_1_email = sheet2.getRange("E12").getValue(); 
+  var Owner_7_1_email = sheet2.getRange("C12").getValue();   
+  var Provider_8_1_email = sheet2.getRange("E13").getValue(); 
+  var Owner_8_1_email = sheet2.getRange("C13").getValue();  
+  var Provider_8_2_email = sheet2.getRange("E14").getValue(); 
+  var Owner_8_2_email = sheet2.getRange("C14").getValue();  
+  var Provider_9_1_email = sheet2.getRange("E15").getValue(); 
+  var Owner_9_1_email = sheet2.getRange("C15").getValue();   
+  var Provider_10_1_email = sheet2.getRange("E16").getValue(); 
+  var Owner_10_1_email = sheet2.getRange("C16").getValue();
+  var Provider_11_1_email = sheet2.getRange("E17").getValue(); 
+  var Owner_11_1_email = sheet2.getRange("C17").getValue(); 
+  var Provider_11_2_email = sheet2.getRange("E18").getValue(); 
+  var Owner_11_2_email = sheet2.getRange("C18").getValue(); 
+  var Lead_email = sheet2.getRange("C19").getValue(); 
+  
+  var sheet21 = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Data Collection");
+  var subject = "Missing Strategic Measure";
+  var body = ", <br><br> System has noticed that you have not updated the Strategic Measures sheet. <br> Please do. <br><br> Thanks!! <br> *System generated e-mail* <br><br> https://docs.google.com/spreadsheets/d/1rAGRsHtabF4JcppZEKo1twzty6Tan5LpIXV2irbq4Kc/edit?usp=sharing" ;
+
+  var Val_1_1 = sheet21.getRange("H2").getValue();
+  var Provider_1_1 = sheet21.getRange("F2").getValue();
+  if (Val_1_1=="") 
+  {
+  MailApp.sendEmail({to:Provider_1_1_email,cc:Owner_1_1_email, bcc: Lead_email, subject: subject,
+                    htmlBody:"Hello " + Provider_1_1 + body });
+   };  
+  
+  var Val_2_1 = sheet21.getRange("H3").getValue();
+  var Provider_2_1 = sheet21.getRange("F3").getValue();
+  if (Val_2_1=="") 
+  {
+  MailApp.sendEmail({to:Provider_2_1_email,cc:Owner_2_1_email, bcc: Lead_email,subject: subject,
+                    htmlBody:"Hello " + Provider_2_1 + body });
+   };  
+  
+  var Val_2_2 = sheet21.getRange("H4").getValue();
+  var Provider_2_2 = sheet21.getRange("F4").getValue();
+  if (Val_2_2=="") 
+  {
+  MailApp.sendEmail({to:Provider_2_2_email,cc:Owner_2_2_email, bcc: Lead_email,subject: subject,
+                    htmlBody:"Hello " + Provider_2_2 + body });
+   };  
+  
+  var Val_2_3 = sheet21.getRange("H5").getValue();
+  var Provider_2_3 = sheet21.getRange("F5").getValue();
+  if (Val_2_3=="") 
+  {
+  MailApp.sendEmail({to:Provider_2_3_email,cc:Owner_2_3_email, bcc: Lead_email,subject: subject,
+                    htmlBody:"Hello " + Provider_2_3 + body });
+   };  
+
+  var Val_2_4 = sheet21.getRange("H6").getValue();
+  var Provider_2_4 = sheet21.getRange("F6").getValue();
+  if (Val_2_4=="") 
+  {
+  MailApp.sendEmail({to:Provider_2_4_email,cc:Owner_2_4_email, bcc: Lead_email,subject: subject,
+                    htmlBody:"Hello " + Provider_2_4 + body });
+   };  
+
+  var Val_3_1 = sheet21.getRange("H7").getValue();
+  var Provider_3_1 = sheet21.getRange("F7").getValue();
+  if (Val_3_1=="") 
+  {
+  MailApp.sendEmail({to:Provider_3_1_email,cc:Owner_3_1_email, bcc: Lead_email,subject: subject,
+                    htmlBody:"Hello " + Provider_3_1 + body });
+   };
+   
+  var Val_3_2 = sheet21.getRange("H8").getValue();
+  var Provider_3_2 = sheet21.getRange("F8").getValue();
+  if (Val_3_2=="") 
+  {
+  MailApp.sendEmail({to:Provider_3_2_email,cc:Owner_3_2_email, bcc: Lead_email,subject: subject,
+                    htmlBody:"Hello " + Provider_3_2 + body });
+   };
+   
+  var Val_4_1 = sheet21.getRange("H9").getValue();
+  var Provider_4_1 = sheet21.getRange("F9").getValue();
+  if (Val_4_1=="") 
+  {
+  MailApp.sendEmail({to:Provider_4_1_email,cc:Owner_4_1_email, bcc: Lead_email,subject: subject,
+                    htmlBody:"Hello " + Provider_4_1 + body });
+   };
+   
+  var Val_5_1 = sheet21.getRange("H10").getValue();
+  var Provider_5_1 = sheet21.getRange("F10").getValue();
+  if (Val_5_1=="") 
+  {
+  MailApp.sendEmail({to:Provider_5_1_email,cc:Owner_5_1_email, bcc: Lead_email,subject: subject,
+                    htmlBody:"Hello " + Provider_5_1 + body });
+   };
+   
+  var Val_6_1 = sheet21.getRange("H11").getValue();
+  var Provider_6_1 = sheet21.getRange("F11").getValue();
+  if (Val_6_1=="") 
+  {
+  MailApp.sendEmail({to:Provider_6_1_email,cc:Owner_6_1_email, subject: subject,
+                    htmlBody:"Hello " + Provider_6_1 + body });
+   };
+   
+  var Val_7_1 = sheet21.getRange("H12").getValue();
+  var Provider_7_1 = sheet21.getRange("F12").getValue();
+  if (Val_7_1=="") 
+  {
+  MailApp.sendEmail({to:Provider_7_1_email,cc:Owner_7_1_email, bcc: Lead_email,subject: subject,
+                    htmlBody:"Hello " + Provider_7_1 + body });
+   };
+  
+  var Val_8_1 = sheet21.getRange("H13").getValue();
+  var Provider_8_1 = sheet21.getRange("F13").getValue();
+  if (Val_8_1=="") 
+  {
+  MailApp.sendEmail({to:Provider_8_1_email,cc:Owner_8_1_email, bcc: Lead_email,subject: subject,
+                    htmlBody:"Hello " + Provider_8_1 + body });
+   };
+   
+  var Val_8_2 = sheet21.getRange("H14").getValue();
+  var Provider_8_2 = sheet21.getRange("F14").getValue();
+  if (Val_8_2=="") 
+  {
+  MailApp.sendEmail({to:Provider_8_2_email,cc:Owner_8_2_email, bcc: Lead_email,subject: subject,
+                    htmlBody:"Hello " + Provider_8_2 + body });
+   };
+   
+  var Val_9_1 = sheet21.getRange("H15").getValue();
+  var Provider_9_1 = sheet21.getRange("F15").getValue();
+  if (Val_9_1=="") 
+  {
+  MailApp.sendEmail({to:Provider_9_1_email,cc:Owner_9_1_email, bcc: Lead_email,subject: subject,
+                    htmlBody:"Hello " + Provider_9_1 + body });
+   };
+   
+  var Val_10_1 = sheet21.getRange("H16").getValue();
+  var Provider_10_1 = sheet21.getRange("F16").getValue();
+  if (Val_10_1=="") 
+  {
+  MailApp.sendEmail({to:Provider_10_1_email,cc:Owner_10_1_email, bcc: Lead_email,subject: subject,
+                    htmlBody:"Hello " + Provider_10_1 + body });
+   };
+   
+  var Val_11_1 = sheet21.getRange("H17").getValue();
+  var Provider_11_1 = sheet21.getRange("F17").getValue();
+  if (Val_11_1=="") 
+  {
+  MailApp.sendEmail({to:Provider_11_1_email,cc:Owner_11_1_email,bcc: Lead_email, subject: subject,
+                    htmlBody:"Hello " + Provider_11_1 + body });
+   };
+   
+  var Val_11_2 = sheet21.getRange("H18").getValue();
+  var Provider_11_2 = sheet21.getRange("F18").getValue();
+  if (Val_11_2=="") 
+  {
+  MailApp.sendEmail({to:Provider_11_2_email,cc:Owner_11_2_email, bcc: Lead_email,subject: subject,
+                    htmlBody:"Hello " + Provider_11_2 + body });
+   };
+   
+}
+
