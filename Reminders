@@ -1,0 +1,236 @@
+function JanReminder() 
+
+{
+  var sheet1 = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Jan");
+  var sheet21 = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Teams");
+  var subject = "Missing update: RQ Dashboard";
+  var body = ", <br><br> System has noticed that you have not updated your RQ dashboard for this month. <br> Please do. <br><br> Thanks!! <br> *System generated e-mail* <br><br> https://docs.google.com/spreadsheets/d/1vvciEmYaPNq1m9RkBs06NJMulWEzY9m9SHfOxQDkoZQ/edit?usp=sharing" ;
+
+
+ var Val = sheet1.getRange("C24").getValue();
+  var Val_owner = sheet21.getRange("C3").getValue();
+  var Val_owner_email = sheet21.getRange("D3").getValue(); 
+  var Val_manager_email = sheet21.getRange("F3").getValue(); 
+  
+Logger.log(Val);
+
+if (Val==0.0) 
+{
+  MailApp.sendEmail({to:Val_owner_email,cc:Val_manager_email, subject: subject,
+                    htmlBody:"Hello " + Val_owner + body });
+ };  
+  
+ 
+  
+  var MulRes = sheet1.getRange("H24").getValue();
+  var MulRes_owner = sheet21.getRange("C4").getValue();
+  var MulRes_owner_email = sheet21.getRange("D4").getValue(); 
+  var MulRes_manager_email = sheet21.getRange("F4").getValue(); 
+  
+Logger.log(MulRes);
+
+if (MulRes==0.0) 
+{
+  MailApp.sendEmail({to:MulRes_owner_email,cc:MulRes_manager_email, subject: subject,
+                    htmlBody:"Hello " + MulRes_owner + body });
+ };  
+  
+  
+  
+  var ResCon = sheet1.getRange("M24").getValue();
+  var ResCon_owner = sheet21.getRange("C5").getValue();
+  var ResCon_owner_email = sheet21.getRange("D5").getValue(); 
+  var ResCon_manager_email = sheet21.getRange("F5").getValue(); 
+  
+Logger.log(ResCon);
+
+if (ResCon==0.0) 
+{
+  MailApp.sendEmail({to:ResCon_owner_email,cc:ResCon_manager_email, subject: subject,
+                    htmlBody:"Hello " + ResCon_owner + body });
+ }; 
+ 
+  
+ 
+  
+  var ResN = sheet1.getRange("R24").getValue();
+  var ResN_owner = sheet21.getRange("C6").getValue();
+  var ResN_owner_email = sheet21.getRange("D6").getValue(); 
+  var ResN_manager_email = sheet21.getRange("F6").getValue(); 
+  
+Logger.log(ResN);
+
+if (ResN==0.0) 
+{
+  MailApp.sendEmail({to:ResN_owner_email,cc:ResN_manager_email, subject: subject,
+                    htmlBody:"Hello " + ResN_owner + body });
+ }; 
+ 
+  
+  
+  var ResS = sheet1.getRange("W24").getValue();
+  var ResS_owner = sheet21.getRange("C7").getValue();
+  var ResS_owner_email = sheet21.getRange("D7").getValue(); 
+  var ResS_manager_email = sheet21.getRange("F7").getValue(); 
+  
+Logger.log(ResS);
+
+if (ResS==0.0) 
+{
+  MailApp.sendEmail({to:ResS_owner_email,cc:ResS_manager_email, subject: subject,
+                    htmlBody:"Hello " + ResS_owner + body });
+ };  
+  
+  
+  
+  
+  var ResWC = sheet1.getRange("AB24").getValue();
+  var ResWC_owner = sheet21.getRange("C8").getValue();
+  var ResWC_owner_email = sheet21.getRange("D8").getValue(); 
+  var ResWC_manager_email = sheet21.getRange("F8").getValue(); 
+  
+Logger.log(ResWC);
+
+if (ResWC==0.0) 
+{
+  MailApp.sendEmail({to:ResWC_owner_email,cc:ResWC_manager_email, subject: subject,
+                    htmlBody:"Hello " + ResWC_owner + body });
+ };  
+  
+  
+  
+  
+   
+  var ResRV = sheet1.getRange("AG24").getValue();
+  var ResRV_owner = sheet21.getRange("C9").getValue();
+  var ResRV_owner_email = sheet21.getRange("D9").getValue(); 
+  var ResRV_manager_email = sheet21.getRange("F9").getValue(); 
+  
+Logger.log(ResRV);
+
+if (ResRV==0.0) 
+{
+  MailApp.sendEmail({to:ResRV_owner_email,cc:ResRV_manager_email, subject: subject,
+                    htmlBody:"Hello " + ResRV_owner + body });
+ };  
+  
+   
+  
+  var Land = sheet1.getRange("AL24").getValue();
+  var Land_owner = sheet21.getRange("C10").getValue();
+  var Land_owner_email = sheet21.getRange("D10").getValue(); 
+  var Land_manager_email = sheet21.getRange("F10").getValue(); 
+  
+Logger.log(Land);
+
+if (Land==0.0) 
+{
+  MailApp.sendEmail({to:Land_owner_email,cc:Land_manager_email, subject: subject,
+                    htmlBody:"Hello " + Land_owner + body });
+ };  
+  
+ 
+   var Ind = sheet1.getRange("AQ24").getValue();
+  var Ind_owner = sheet21.getRange("C11").getValue();
+  var Ind_owner_email = sheet21.getRange("D11").getValue(); 
+  var Ind_manager_email = sheet21.getRange("F11").getValue(); 
+  
+Logger.log(Ind);
+
+if (Ind==0.0) 
+{
+  MailApp.sendEmail({to:Ind_owner_email,cc:Ind_manager_email, subject: subject,
+                    htmlBody:"Hello " + Ind_owner + body });
+ };  
+  
+  
+  
+  var RePla = sheet1.getRange("AV24").getValue();
+  var RePla_owner = sheet21.getRange("C12").getValue();
+  var RePla_owner_email = sheet21.getRange("D12").getValue(); 
+  var RePla_manager_email = sheet21.getRange("F12").getValue(); 
+  
+Logger.log(RePla);
+
+if (RePla==0.0) 
+{
+  MailApp.sendEmail({to:RePla_owner_email,cc:RePla_manager_email, subject: subject,
+                    htmlBody:"Hello " + RePla_owner + body });
+ };  
+  
+  
+  
+  
+ /* var ReCo = sheet1.getRange("BA24").getValue();
+  var ReCo_owner = sheet21.getRange("C13").getValue();
+  var ReCo_owner_email = sheet21.getRange("D13").getValue(); 
+  var ReCo_manager_email = sheet21.getRange("F13").getValue(); 
+  
+Logger.log(ReCo);
+
+if (ReCo==0.0) 
+{
+  MailApp.sendEmail({to:ReCo_owner_email,cc:ReCo_manager_email, subject: subject,
+                    htmlBody:"Hello " + ReCo_owner + body });
+ };  
+  
+    */
+  
+    var Off = sheet1.getRange("BA24").getValue();
+  var Off_owner = sheet21.getRange("C13").getValue();
+  var Off_owner_email = sheet21.getRange("D13").getValue(); 
+  var Off_manager_email = sheet21.getRange("F13").getValue(); 
+  
+Logger.log(Off);
+
+if (Off==0.0) 
+{
+  MailApp.sendEmail({to:Off_owner_email,cc:Off_manager_email, subject: subject,
+                    htmlBody:"Hello " + Off_owner + body });
+ };  
+  
+   
+  
+  var ShoC = sheet1.getRange("BF24").getValue();
+  var ShoC_owner = sheet21.getRange("C14").getValue();
+  var ShoC_owner_email = sheet21.getRange("D14").getValue(); 
+  var ShoC_manager_email = sheet21.getRange("F14").getValue(); 
+  
+Logger.log(ShoC);
+
+if (ShoC==0.0) 
+{
+  MailApp.sendEmail({to:ShoC_owner_email,cc:ShoC_manager_email, subject: subject,
+                    htmlBody:"Hello " + ShoC_owner + body });
+ };  
+ 
+    
+  
+  var Exe = sheet1.getRange("BK24").getValue();
+  var Exe_owner = sheet21.getRange("C15").getValue();
+  var Exe_owner_email = sheet21.getRange("D15").getValue(); 
+  var Exe_manager_email = sheet21.getRange("F15").getValue(); 
+  
+Logger.log(Exe);
+
+if (Exe==0.0) 
+{
+  MailApp.sendEmail({to:Exe_owner_email,cc:Exe_manager_email, subject: subject,
+                    htmlBody:"Hello " + Exe_owner + body });
+ };  
+   
+  var SPC = sheet1.getRange("BP24").getValue();
+  var SPC_owner = sheet21.getRange("C16").getValue();
+  var SPC_owner_email = sheet21.getRange("D16").getValue(); 
+  var SPC_manager_email = sheet21.getRange("F16").getValue(); 
+  
+Logger.log(SPC);
+
+if (SPC==0.0) 
+{
+  MailApp.sendEmail({to:SPC_owner_email,cc:SPC_manager_email, subject: subject,
+                    htmlBody:"Hello " + SPC_owner + body });
+ };  
+  
+  }
+  
