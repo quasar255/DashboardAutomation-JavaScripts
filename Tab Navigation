@@ -1,0 +1,85 @@
+
+function BackToDashboard() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName("Dashboard");
+  ss.setActiveSheet(sheet).setActiveSelection("C1");
+}
+
+function JanData() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName("Jan");
+  ss.setActiveSheet(sheet).setActiveSelection("C1");
+}
+
+function FebData() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName("Feb");
+  ss.setActiveSheet(sheet).setActiveSelection("C1");
+}
+
+function MarData() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName("Mar");
+  ss.setActiveSheet(sheet).setActiveSelection("C1");
+}
+
+function AprData() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName("Apr");
+  ss.setActiveSheet(sheet).setActiveSelection("C1");
+}
+
+function MayData() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName("May");
+  ss.setActiveSheet(sheet).setActiveSelection("C1");
+}
+
+function JunData() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName("Jun");
+  ss.setActiveSheet(sheet).setActiveSelection("C1");
+}
+
+function JulData() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName("Jul");
+  ss.setActiveSheet(sheet).setActiveSelection("C1");
+}
+
+function AugData() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName("Aug");
+  ss.setActiveSheet(sheet).setActiveSelection("C1");
+}
+
+function SepData() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName("Sep");
+  ss.setActiveSheet(sheet).setActiveSelection("C1");
+}
+
+function OctData() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName("Oct");
+  ss.setActiveSheet(sheet).setActiveSelection("C1");
+}
+
+function NovData() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName("Nov");
+  ss.setActiveSheet(sheet).setActiveSelection("C1");
+}
+
+function DecData() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName("Dec");
+  ss.setActiveSheet(sheet).setActiveSelection("C1");
+}
+
+
+function Teams() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName("Teams");
+  ss.setActiveSheet(sheet).setActiveSelection("C1");
+}
